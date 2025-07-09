@@ -1,0 +1,201 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      border-bottom: 2px #848282 solid;
+      padding: 10px 20px;
+      color: black;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 200px;
+      height: 50px;
+      padding-left: 25px;
+    }
+
+    .navbar-right {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: 10px;
+      gap: 20px;
+    }
+
+    .navbar-right a {
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.2s;
+    }
+
+    .navbar-right a:hover {
+      color: #e5251e;
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+      }
+
+      .navbar-left,
+      .navbar-right {
+        width: 100%;
+        justify-content: center;
+        padding: 5px 0;
+      }
+
+      .logo {
+        padding-left: 0;
+      }
+
+      .navbar-right {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar-right a {
+        margin: 8px 0;
+      }
+    }
+
+
+
+
+
+    .oneimg{
+        width: 99vw;
+        height: 60%;
+    }
+
+
+
+    
+
+
+
+
+    
+    /* Section: Product Portfolio */
+    .three {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 10px;
+    }
+
+    .three h2 {
+      margin-bottom: 20px;
+    }
+
+    .threeimg {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .thimg {
+        width: 32vw;
+        height: 70vh;
+        padding: 3px 3px; 
+    }
+   
+    
+
+    
+    .five{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+    }
+    .five h2{
+        margin: 25px 5px;
+    }
+    .fiveimg {
+        display: flex;;
+        justify-content: space-between;
+    }
+    .fimg{
+        width: 19vw;
+        height: 45vh;
+        padding: 3px;
+    }
+
+
+
+
+
+
+
+    /* Footer Styling */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      flex-wrap: wrap;
+      border-top: 2px solid rgba(0, 0, 0, 0.256);
+      margin-top: 10px;
+    }
+
+    footer div {
+      color: #333;
+    }
+
+    footer .social-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 20px;
+      color: #111;
+    }
+
+    footer .social-icons a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer1 a{
+        text-decoration: none;
+        color: orange;
+    }
+
+    /* Responsive Footer */
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
